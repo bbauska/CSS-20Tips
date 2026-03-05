@@ -1,3 +1,6 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of CSS-20-Tips/readme.md ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>1. Absolute positioning</h2>
 <p>If you want control over where an element lives on our website at all times, absolute positioning 
 is the key to making this happen. If you think of your browser as one big bounding box, absolute 
@@ -56,7 +59,7 @@ of the menu and the line-height of the text the same. I see this technique a lot
 existing websites for clients. Here’s an example:</p>
 
 <pre>
-.nav li{
+.nav li {
  line-height:50px;
  height:50px;
 }
@@ -68,13 +71,13 @@ something to change colors when someone hovers their mouse over it, use the same
 to it and change the styling. Here’s an example:</p>
 
 <pre>
-.entry h2{
+.entry h2 {
  font-size:36px;
  color:#000;
  font-weight:800;
 }
 
-.entry h2:hover{
+.entry h2:hover {
  color:#f00;
 }
 </pre>
@@ -89,7 +92,7 @@ quickly to the end result. You ideally want to ease the change in gradually, whi
 property comes into play.</p>
 
 <pre>
-.entry h2:hover{
+.entry h2:hover {
  color:#f00;
  transition: all 0.3s ease;
 }
@@ -122,7 +125,7 @@ This means that the largest the image could ever be is 100%, and the height is a
 Using the image example above, if you only want to target the images of a certain section, like your blog, use a class for the blog section, and combine it with the actual selector. This will enable you to select only the images of the blog section, and not other images, such as your logo, or social meia icons, or images in any other sections of your site, like the sidebar. Here’s how the CSS would look:
 
 <pre>
-.blog img{
+.blog img {
  max-width:100%;
  height:auto;
 }
@@ -186,7 +189,7 @@ This is extremely handy, especially if you are using an icon font. You can place
 Like the :before selector, you can use :after to insert content globally on specific elements. A practical use would be adding “read more” after every excerpt on a blog. Here’s how you would do that.
 
 <pre>
-p:after{ 
+p:after { 
  content: " -Read more… ";
  color:#f00;
 }
@@ -204,7 +207,7 @@ This CSS reset method sets a standard base for all of your websites, giving them
 Everyone loves drop caps. It reminds us of the traditional printed book, and is a great way to start a page of content. That 1st, large letter really grabs your attention. There’s an easy way to create a drop cap in css, and it’s by using the pseudo element: :first letter. Here’s an example :
 
 <pre>
-p:first-letter{
+p:first-letter {
  display:block;
  float:left;
  margin:3px;
