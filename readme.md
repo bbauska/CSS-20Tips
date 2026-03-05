@@ -121,10 +121,12 @@ This means that the largest the image could ever be is 100%, and the height is a
 <h2>9. Control the elements of a section</h2>
 Using the image example above, if you only want to target the images of a certain section, like your blog, use a class for the blog section, and combine it with the actual selector. This will enable you to select only the images of the blog section, and not other images, such as your logo, or social meia icons, or images in any other sections of your site, like the sidebar. Here’s how the CSS would look:
 
+```
 .blog img{
  max-width:100%;
  height:auto;
 }
+```
 
 <h2>10. Direct children</h2>
 I wish I’d known this when I first started out using CSS. This would have saved me so much time! Use > to select the direct children of an element. For example:
@@ -148,7 +150,9 @@ li:nth-child(2) {
 
 The CSS above targets the second item in the list and makes it bold, underlined, and blue. Add an “n” after the number in parenthesis and you can target every 2nd list item. Imagine being able to style every other line in a table-style layout for easy reading. The CSS would be:
 
+```
 li:nth-child(2)
+```
 
 <h2>11. Apply CSS to multiple classes, or selectors</h2>
 Let’s say you wanted to add an identical border around all images, the blog section and the sidebar. You don’t have to write out the same exact CSS 3 times. Just list those items out, separated by commas. Here is an example:
